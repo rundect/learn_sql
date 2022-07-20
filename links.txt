@@ -1,0 +1,15 @@
+1. Руководство по стилю SQL · SQL Style Guide
+https://www.sqlstyle.guide/ru/
+
+2. SQL Formatter
+https://codebeautify.org/sqlformatter
+
+3. MySQL online editor
+https://onecompiler.com/mysql
+
+4. Интерактивный тренажер по SQL
+https://stepik.org/course/63054/
+
+5. SQL. Задачи и решения. Сергей Моисеенко
+http://www.sql-tutorial.ru/ru/content.html
+

@@ -1,0 +1,36 @@
+
+SELECT author, title, price FROM book;
+
+SELECT title AS Название, author AS Автор
+FROM book;
+
+SELECT title, amount,
+    amount * 1.65 AS pack
+FROM book;
+
+
+SELECT title, author, amount,
+    ROUND((price*70/100), 2) AS new_price
+FROM book;
+
+SELECT author, title,
+    ROUND(IF(author = 'Булгаков М.А.', price * 1.1, IF(author = 'Есенин С.А.', price * 1.05, price)), 2) AS new_price
+FROM book;
+
+SELECT title, author, price, amount
+FROM book
+WHERE (600<price<500) and (amount * price >= 5000 );
+
+SELECT title, author
+FROM book
+WHERE (price BETWEEN 540.50 AND 800) AND (amount IN (2, 3, 5, 7));
+
+SELECT author, title
+FROM book
+WHERE amount BETWEEN 2 AND 14
+ORDER BY author DESC, title ;
+
+SELECT title, author
+FROM book
+WHERE author LIKE '%С.%' AND title LIKE '%_ _%'
+ORDER BY title;
