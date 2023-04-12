@@ -1,4 +1,4 @@
-
+"""
 CREATE TABLE book(
     book_id INT PRIMARY KEY AUTO_INCREMENT,
     title VARCHAR(50),
@@ -23,3 +23,4 @@ INSERT INTO book (title, author, price, amount)
 VALUES ('Стихотворения и поэмы', 'Есенин С.А.', 650.00, 15);
 
 SELECT * FROM book;
+"""
