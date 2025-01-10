@@ -1,7 +1,9 @@
 select maker 
 from Product
-join PC 
-on Product.model = PC.model
-where PC.speed >= 450
+where type in ('PC')
+except
+select maker 
+from Product
+where type in ('Laptop')
 group by maker
 ;
